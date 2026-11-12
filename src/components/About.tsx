@@ -3,7 +3,7 @@ import {
   GraduationCap, Trophy, HeartHandshake, MonitorUp, BadgeCheck, Plane, HandHeart, Music,
   ArrowRight, Quote, Check, BedDouble, Bus, ShieldCheck, Sparkles, Award,
 } from "lucide-react";
-import { WHY_GRANGE, SCHOOLS, RESULTS, LEADERSHIP, G } from "../data/content";
+import { WHY_PINEAPPLE, SCHOOLS, RESULTS, LEADERSHIP, G } from "../data/content";
 import { SmartImage, SectionHeading, Reveal, GoldButton, OutlineButton } from "./shared";
 import { cn } from "../utils/cn";
 
@@ -16,7 +16,7 @@ const ICONS: Record<string, typeof GraduationCap> = {
 export function Welcome({ onApply }: { onApply: () => void }) {
   return (
     <section id="welcome" className="relative overflow-hidden bg-white py-20 lg:py-28">
-      <span className="font-display pointer-events-none absolute -right-8 top-10 hidden select-none text-[11rem] font-bold leading-none text-grange-cream xl:block">
+      <span className="font-display pointer-events-none absolute -right-8 top-10 hidden select-none text-[11rem] font-bold leading-none text-pineapple-cream xl:block">
         1958
       </span>
       <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2">
@@ -30,13 +30,13 @@ export function Welcome({ onApply }: { onApply: () => void }) {
               className="aspect-[4/5] w-full object-cover object-top"
             />
           </div>
-          <div className="absolute -bottom-7 -right-2 bg-grange-navy-900 px-7 py-5 shadow-2xl sm:right-8">
+          <div className="absolute -bottom-7 -right-2 bg-pineapple-navy-900 px-7 py-5 shadow-2xl sm:right-8">
             <p className="font-display text-lg font-semibold text-white">Richard McMahon</p>
-            <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-grange-gold-400">Head of School · Principal</p>
+            <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-pineapple-gold-400">Head of School · Principal</p>
           </div>
-          <div className="animate-float absolute -left-3 top-8 hidden bg-grange-gold-500 px-5 py-4 shadow-xl sm:block">
-            <p className="font-display text-3xl font-bold text-grange-navy-950">68+</p>
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-grange-navy-900">Years of Excellence</p>
+          <div className="animate-float absolute -left-3 top-8 hidden bg-pineapple-gold-500 px-5 py-4 shadow-xl sm:block">
+            <p className="font-display text-3xl font-bold text-pineapple-navy-950">68+</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-pineapple-navy-900">Years of Excellence</p>
           </div>
         </Reveal>
 
@@ -44,16 +44,16 @@ export function Welcome({ onApply }: { onApply: () => void }) {
         <div>
           <Reveal>
             <div className="flex items-center gap-3">
-              <span className="h-px w-10 bg-grange-gold-500" />
-              <span className="text-xs font-bold uppercase tracking-[0.28em] text-grange-gold-600">Principal's Welcome Address</span>
+              <span className="h-px w-10 bg-pineapple-gold-500" />
+              <span className="text-xs font-bold uppercase tracking-[0.28em] text-pineapple-gold-600">Principal's Welcome Address</span>
             </div>
-            <h2 className="font-display mt-4 text-3xl font-semibold leading-tight text-grange-navy-900 sm:text-4xl lg:text-[2.75rem]">
-              Welcome — and thank you for your interest in Grange School
+            <h2 className="font-display mt-4 text-3xl font-semibold leading-tight text-pineapple-navy-900 sm:text-4xl lg:text-[2.75rem]">
+              Welcome — and thank you for your interest in Pineapple School
             </h2>
           </Reveal>
           <Reveal delay={1}>
             <p className="mt-6 text-[15px] leading-relaxed text-slate-600">
-              Grange School currently offers an outstanding, holistic co-education to students from Nursery to Year Eleven (IGCSE).
+              Pineapple School currently offers an outstanding, holistic co-education to students from Nursery to Year Eleven (IGCSE).
               We are a premium, private day and boarding school, established in 1958, delivering the National Curriculum of England
               and the Cambridge (CIE) curriculum.
             </p>
@@ -62,9 +62,9 @@ export function Welcome({ onApply }: { onApply: () => void }) {
               results comparable to the top British independent schools in the UK. We provide modern facilities and a safe learning
               environment where children flourish, supported by dedicated and passionate teachers.
             </p>
-            <div className="mt-6 flex items-start gap-4 border-l-[3px] border-grange-gold-500 bg-grange-cream px-5 py-4">
-              <Quote size={26} className="mt-1 shrink-0 text-grange-gold-600" />
-              <p className="font-display text-[17px] italic leading-relaxed text-grange-navy-900">
+            <div className="mt-6 flex items-start gap-4 border-l-[3px] border-pineapple-gold-500 bg-pineapple-cream px-5 py-4">
+              <Quote size={26} className="mt-1 shrink-0 text-pineapple-gold-600" />
+              <p className="font-display text-[17px] italic leading-relaxed text-pineapple-navy-900">
                 “We provide a dynamic learning community which nurtures and inspires every learner to be the best they can be.”
               </p>
             </div>
@@ -82,7 +82,7 @@ export function Welcome({ onApply }: { onApply: () => void }) {
               { v: "British + CIE", l: "Curriculum" },
             ].map((s) => (
               <div key={s.l}>
-                <p className="font-display text-lg font-semibold text-grange-navy-900 sm:text-xl">{s.v}</p>
+                <p className="font-display text-lg font-semibold text-pineapple-navy-900 sm:text-xl">{s.v}</p>
                 <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500">{s.l}</p>
               </div>
             ))}
@@ -100,26 +100,26 @@ function initials(name: string) {
 
 export function Leadership() {
   return (
-    <section id="leadership" className="bg-grange-cream py-20 lg:py-24">
+    <section id="leadership" className="bg-pineapple-cream py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHeading
           eyebrow="Our Management"
           title="Highly Committed, Experienced Professionals"
-          text="Grange School is endowed with dedicated leaders who form the Senior Executive Team — setting the standard across every classroom."
+          text="Pineapple School is endowed with dedicated leaders who form the Senior Executive Team — setting the standard across every classroom."
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {LEADERSHIP.map((m, i) => (
             <Reveal key={m.name} delay={(i % 4) as 0 | 1 | 2 | 3}>
               <article className="group bg-white shadow-[0_14px_40px_-18px_rgba(10,26,60,0.4)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_-18px_rgba(10,26,60,0.5)]">
-                <div className="relative flex aspect-[4/4] items-center justify-center overflow-hidden bg-grange-navy-900">
+                <div className="relative flex aspect-[4/4] items-center justify-center overflow-hidden bg-pineapple-navy-900">
                   <span className="font-display text-6xl font-semibold text-white/15">{initials(m.name)}</span>
                   <SmartImage src={m.image} alt={m.name} className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-grange-navy-950/70 via-transparent to-transparent opacity-80" />
-                  <span className="absolute bottom-3 left-4 text-[10px] font-bold uppercase tracking-[0.24em] text-grange-gold-300">Senior Executive Team</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-pineapple-navy-950/70 via-transparent to-transparent opacity-80" />
+                  <span className="absolute bottom-3 left-4 text-[10px] font-bold uppercase tracking-[0.24em] text-pineapple-gold-300">Senior Executive Team</span>
                 </div>
-                <div className="border-t-2 border-grange-gold-500 px-5 py-4">
-                  <h3 className="font-display text-lg font-semibold text-grange-navy-900">{m.name}</h3>
-                  <p className="mt-0.5 text-xs font-semibold uppercase tracking-[0.12em] text-grange-gold-700">{m.role}</p>
+                <div className="border-t-2 border-pineapple-gold-500 px-5 py-4">
+                  <h3 className="font-display text-lg font-semibold text-pineapple-navy-900">{m.name}</h3>
+                  <p className="mt-0.5 text-xs font-semibold uppercase tracking-[0.12em] text-pineapple-gold-700">{m.role}</p>
                 </div>
               </article>
             </Reveal>
@@ -130,10 +130,10 @@ export function Leadership() {
   );
 }
 
-/* ================= WHY CHOOSE GRANGE ================= */
-export function WhyGrange() {
+/* ================= WHY CHOOSE PINEAPPLE ================= */
+export function WhyPineapple() {
   return (
-    <section id="why-grange" className="relative bg-grange-navy-950 py-20 lg:py-28">
+    <section id="why-pineapple" className="relative bg-pineapple-navy-950 py-20 lg:py-28">
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.07]"
         style={{ backgroundImage: "radial-gradient(circle at 1px 1px, #C6A34F 1px, transparent 0)", backgroundSize: "26px 26px" }}
@@ -141,25 +141,25 @@ export function WhyGrange() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHeading
           dark gold
-          eyebrow="Staying Connected with the Grange Community"
-          title="Why Choose Grange?"
+          eyebrow="Staying Connected with the Pineapple Community"
+          title="Why Choose Pineapple?"
           text="Eight good reasons why we believe you should entrust your child's education to us."
         />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {WHY_GRANGE.map((w, i) => {
+          {WHY_PINEAPPLE.map((w, i) => {
             const Icon = ICONS[w.icon] ?? Sparkles;
             return (
               <Reveal key={w.title} delay={(i % 4) as 0 | 1 | 2 | 3}>
-                <article className="group relative h-full border border-white/10 bg-white/[0.04] p-7 backdrop-blur transition-all duration-300 hover:-translate-y-1.5 hover:border-grange-gold-500/60 hover:bg-white/[0.07]">
-                  <span className="font-display absolute right-5 top-4 text-4xl font-bold text-white/[0.07] transition group-hover:text-grange-gold-500/20">
+                <article className="group relative h-full border border-white/10 bg-white/[0.04] p-7 backdrop-blur transition-all duration-300 hover:-translate-y-1.5 hover:border-pineapple-gold-500/60 hover:bg-white/[0.07]">
+                  <span className="font-display absolute right-5 top-4 text-4xl font-bold text-white/[0.07] transition group-hover:text-pineapple-gold-500/20">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="inline-flex h-13 w-13 items-center justify-center bg-grange-gold-500/15 p-3.5 text-grange-gold-400 transition group-hover:bg-grange-gold-500 group-hover:text-grange-navy-950">
+                  <span className="inline-flex h-13 w-13 items-center justify-center bg-pineapple-gold-500/15 p-3.5 text-pineapple-gold-400 transition group-hover:bg-pineapple-gold-500 group-hover:text-pineapple-navy-950">
                     <Icon size={26} />
                   </span>
                   <h3 className="font-display mt-5 text-xl font-semibold text-white">{w.title}</h3>
                   <p className="mt-2.5 text-sm leading-relaxed text-white/65">{w.text}</p>
-                  <span className="mt-5 block h-[2px] w-10 bg-grange-gold-500 transition-all duration-300 group-hover:w-full" />
+                  <span className="mt-5 block h-[2px] w-10 bg-pineapple-gold-500 transition-all duration-300 group-hover:w-full" />
                 </article>
               </Reveal>
             );
@@ -176,21 +176,21 @@ export function Schools() {
     <section id="primary-secondary" className="bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHeading
-          eyebrow="Explore Grange"
+          eyebrow="Explore Pineapple"
           title="One School, Two Thriving Phases"
           text="A seamless journey from a child's first steps in Nursery to Cambridge IGCSE success in Year 11."
         />
         <div className="grid gap-8 lg:grid-cols-2">
           {SCHOOLS.map((s, i) => (
             <Reveal key={s.title} delay={i as 0 | 1}>
-              <article className="group relative overflow-hidden bg-grange-navy-950 shadow-[0_30px_60px_-25px_rgba(10,26,60,0.6)]">
+              <article className="group relative overflow-hidden bg-pineapple-navy-950 shadow-[0_30px_60px_-25px_rgba(10,26,60,0.6)]">
                 <SmartImage
                   src={s.image}
                   fallback={s.fallback}
                   alt={s.title}
                   className="h-[300px] w-full object-cover opacity-90 transition-transform duration-[1.2s] group-hover:scale-105 sm:h-[340px]"
                 />
-                <div className="absolute left-0 top-6 bg-grange-gold-500 px-5 py-2 text-[11px] font-bold uppercase tracking-[0.2em] text-grange-navy-950">
+                <div className="absolute left-0 top-6 bg-pineapple-gold-500 px-5 py-2 text-[11px] font-bold uppercase tracking-[0.2em] text-pineapple-navy-950">
                   {s.tag}
                 </div>
                 <div className="relative p-8 sm:p-10">
@@ -200,14 +200,14 @@ export function Schools() {
                   <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
                     {s.points.map((p) => (
                       <li key={p} className="flex items-center gap-2.5 text-sm font-medium text-white/85">
-                        <span className="flex h-5 w-5 items-center justify-center rounded-full bg-grange-gold-500/20">
-                          <Check size={12} className="text-grange-gold-400" />
+                        <span className="flex h-5 w-5 items-center justify-center rounded-full bg-pineapple-gold-500/20">
+                          <Check size={12} className="text-pineapple-gold-400" />
                         </span>
                         {p}
                       </li>
                     ))}
                   </ul>
-                  <a href="#admissions" className="mt-7 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.18em] text-grange-gold-400 transition hover:gap-3 hover:text-grange-gold-300">
+                  <a href="#admissions" className="mt-7 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.18em] text-pineapple-gold-400 transition hover:gap-3 hover:text-pineapple-gold-300">
                     Admissions Information <ArrowRight size={16} />
                   </a>
                 </div>
@@ -223,20 +223,20 @@ export function Schools() {
 /* ================= BOARDING ================= */
 export function Boarding({ onApply }: { onApply: () => void }) {
   return (
-    <section id="boarding" className="relative overflow-hidden bg-grange-navy-900 py-20 lg:py-24">
+    <section id="boarding" className="relative overflow-hidden bg-pineapple-navy-900 py-20 lg:py-24">
       <SmartImage
         src={G("/wp-content/uploads/2026/07/new-hostel_result.webp")}
         fallback="https://images.pexels.com/photos/34211750/pexels-photo-34211750.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
-        alt="Grange boarding house"
+        alt="Pineapple boarding house"
         className="absolute inset-0 h-full w-full object-cover opacity-20"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-grange-navy-950 via-grange-navy-950/85 to-grange-navy-900/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-pineapple-navy-950 via-pineapple-navy-950/85 to-pineapple-navy-900/40" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.2fr_1fr]">
         <div>
           <Reveal>
             <div className="flex items-center gap-3">
-              <span className="h-px w-10 bg-grange-gold-500" />
-              <span className="text-xs font-bold uppercase tracking-[0.28em] text-grange-gold-400">Boarding at Grange</span>
+              <span className="h-px w-10 bg-pineapple-gold-500" />
+              <span className="text-xs font-bold uppercase tracking-[0.28em] text-pineapple-gold-400">Boarding at Pineapple</span>
             </div>
             <h2 className="font-display mt-4 text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-[2.75rem]">
               A Home Away From Home in the Heart of Ikeja
@@ -255,7 +255,7 @@ export function Boarding({ onApply }: { onApply: () => void }) {
               { icon: Bus, t: "5 Mins Away", d: "From main campus" },
             ].map((f) => (
               <div key={f.t} className="border border-white/12 bg-white/[0.05] p-5 backdrop-blur">
-                <f.icon size={24} className="text-grange-gold-400" />
+                <f.icon size={24} className="text-pineapple-gold-400" />
                 <p className="font-display mt-3 text-lg font-semibold text-white">{f.t}</p>
                 <p className="text-xs font-medium uppercase tracking-[0.14em] text-white/55">{f.d}</p>
               </div>
@@ -263,8 +263,8 @@ export function Boarding({ onApply }: { onApply: () => void }) {
           </Reveal>
         </div>
         <Reveal delay={2}>
-          <div className="border border-grange-gold-500/40 bg-white/[0.06] p-8 backdrop-blur-md sm:p-10">
-            <BedDouble size={34} className="text-grange-gold-400" />
+          <div className="border border-pineapple-gold-500/40 bg-white/[0.06] p-8 backdrop-blur-md sm:p-10">
+            <BedDouble size={34} className="text-pineapple-gold-400" />
             <h3 className="font-display mt-4 text-2xl font-semibold text-white">Boarding Enquiries</h3>
             <p className="mt-2 text-sm leading-relaxed text-white/70">
               Weekly and full boarding options available. Speak to our team about house life, weekend activities and pastoral support.
@@ -298,9 +298,9 @@ function Bar({ value, delay }: { value: number; delay: number }) {
     return () => io.disconnect();
   }, [value, delay]);
   return (
-    <div ref={ref} className="h-3.5 w-full overflow-hidden rounded-full bg-grange-navy-900/10">
+    <div ref={ref} className="h-3.5 w-full overflow-hidden rounded-full bg-pineapple-navy-900/10">
       <div
-        className="h-full rounded-full bg-gradient-to-r from-grange-gold-700 via-grange-gold-500 to-grange-gold-400 transition-[width] duration-[1600ms] ease-out"
+        className="h-full rounded-full bg-gradient-to-r from-pineapple-gold-700 via-pineapple-gold-500 to-pineapple-gold-400 transition-[width] duration-[1600ms] ease-out"
         style={{ width: `${w}%` }}
       />
     </div>
@@ -309,15 +309,15 @@ function Bar({ value, delay }: { value: number; delay: number }) {
 
 export function Results() {
   return (
-    <section id="results" className="bg-grange-cream py-20 lg:py-28">
+    <section id="results" className="bg-pineapple-cream py-20 lg:py-28">
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1fr_1.1fr]">
         <div>
           <Reveal>
             <div className="flex items-center gap-3">
-              <span className="h-px w-10 bg-grange-gold-500" />
-              <span className="text-xs font-bold uppercase tracking-[0.28em] text-grange-gold-600">High Academic Standards</span>
+              <span className="h-px w-10 bg-pineapple-gold-500" />
+              <span className="text-xs font-bold uppercase tracking-[0.28em] text-pineapple-gold-600">High Academic Standards</span>
             </div>
-            <h2 className="font-display mt-4 text-3xl font-semibold leading-tight text-grange-navy-900 sm:text-4xl">
+            <h2 className="font-display mt-4 text-3xl font-semibold leading-tight text-pineapple-navy-900 sm:text-4xl">
               Excellent Exam Results, Year After Year
             </h2>
             <p className="mt-4 text-[15px] leading-relaxed text-slate-600">
@@ -329,10 +329,10 @@ export function Results() {
             {RESULTS.map((r, i) => (
               <Reveal key={r.grade} delay={i as 0 | 1 | 2}>
                 <div className="flex items-end justify-between">
-                  <p className="text-[13px] font-bold uppercase tracking-[0.16em] text-grange-navy-900">
+                  <p className="text-[13px] font-bold uppercase tracking-[0.16em] text-pineapple-navy-900">
                     Grades {r.grade} <span className="font-medium normal-case tracking-normal text-slate-500">· {r.note}</span>
                   </p>
-                  <p className="font-display text-3xl font-semibold text-grange-gold-700">{r.value}%</p>
+                  <p className="font-display text-3xl font-semibold text-pineapple-gold-700">{r.value}%</p>
                 </div>
                 <div className="mt-2"><Bar value={r.value} delay={i * 200} /></div>
               </Reveal>
@@ -347,19 +347,19 @@ export function Results() {
             <SmartImage
               src={G("/wp-content/uploads/2026/06/IMG_1848-1_result-768x512.webp")}
               fallback="https://images.pexels.com/photos/8471839/pexels-photo-8471839.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
-              alt="Science at Grange"
+              alt="Science at Pineapple"
               className="mt-10 aspect-[3/4] w-full object-cover shadow-xl"
             />
             <SmartImage
               src={G("/wp-content/uploads/2026/05/IMG_9646_result-scaled.webp")}
               fallback="https://images.pexels.com/photos/11025019/pexels-photo-11025019.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
-              alt="Learning at Grange"
+              alt="Learning at Pineapple"
               className="aspect-[3/4] w-full object-cover shadow-xl"
             />
           </div>
-          <div className="absolute -bottom-6 left-1/2 flex w-[92%] -translate-x-1/2 items-center gap-4 bg-grange-navy-900 px-6 py-5 shadow-2xl">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-grange-gold-500">
-              <Award size={24} className="text-grange-navy-950" />
+          <div className="absolute -bottom-6 left-1/2 flex w-[92%] -translate-x-1/2 items-center gap-4 bg-pineapple-navy-900 px-6 py-5 shadow-2xl">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-pineapple-gold-500">
+              <Award size={24} className="text-pineapple-navy-950" />
             </span>
             <p className="text-sm leading-snug text-white/85">
               <strong className="text-white">Top IGCSE outcomes in Lagos</strong> — comparable to leading UK independent schools.

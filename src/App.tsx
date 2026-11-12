@@ -1,8 +1,10 @@
+"use client";
+
 import { useState } from "react";
 import { ShieldCheck, Users, Languages, LifeBuoy } from "lucide-react";
 import { TopBar, Navbar, ApplyModal } from "./components/Navbar";
 import { Hero } from "./components/Hero";
-import { Welcome, Leadership, WhyGrange, Schools, Boarding, Results } from "./components/About";
+import { Welcome, Leadership, WhyPineapple, Schools, Boarding, Results } from "./components/About";
 import { Voices, History, LifeGallery } from "./components/Voices";
 import { News, Admissions, Faq, Contact, Footer, BackToTop } from "./components/Closing";
 import { Reveal } from "./components/shared";
@@ -15,12 +17,12 @@ function PastoralStrip() {
     { icon: LifeBuoy, t: "Learning Support", d: "Individual and small-group provision plus personalised programmes." },
   ];
   return (
-    <section id="pastoral" className="border-y border-grange-gold-500/25 bg-grange-navy-950 py-14">
+    <section id="pastoral" className="border-y border-pineapple-gold-500/25 bg-pineapple-navy-950 py-14">
       <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
         {items.map((c, i) => (
           <Reveal key={c.t} delay={(i % 4) as 0 | 1 | 2 | 3} className="flex items-start gap-4">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center border border-grange-gold-500/40 bg-grange-gold-500/10">
-              <c.icon size={22} className="text-grange-gold-400" />
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center border border-pineapple-gold-500/40 bg-pineapple-gold-500/10">
+              <c.icon size={22} className="text-pineapple-gold-400" />
             </span>
             <span>
               <span className="font-display block text-lg font-semibold text-white">{c.t}</span>
@@ -47,7 +49,7 @@ export default function App() {
           <Welcome onApply={openApply} />
         </div>
         <Leadership />
-        <WhyGrange />
+        <WhyPineapple />
         <Schools />
         <PastoralStrip />
         <Boarding onApply={openApply} />

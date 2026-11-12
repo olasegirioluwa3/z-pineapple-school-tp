@@ -93,13 +93,13 @@ export function SectionHeading({
   return (
     <Reveal className={cn("mb-12 max-w-3xl", align === "center" ? "mx-auto text-center" : "text-left")}>
       <div className={cn("flex items-center gap-3", align === "center" && "justify-center")}>
-        <span className="h-px w-10 bg-grange-gold-500" />
-        <span className={cn("text-xs font-bold uppercase tracking-[0.28em]", gold ? "text-grange-gold-400" : "text-grange-gold-600")}>
+        <span className="h-px w-10 bg-pineapple-gold-500" />
+        <span className={cn("text-xs font-bold uppercase tracking-[0.28em]", gold ? "text-pineapple-gold-400" : "text-pineapple-gold-600")}>
           {eyebrow}
         </span>
-        <span className="h-px w-10 bg-grange-gold-500" />
+        <span className="h-px w-10 bg-pineapple-gold-500" />
       </div>
-      <h2 className={cn("font-display mt-4 text-3xl font-semibold leading-tight sm:text-4xl lg:text-[2.75rem]", dark ? "text-white" : "text-grange-navy-900")}>
+      <h2 className={cn("font-display mt-4 text-3xl font-semibold leading-tight sm:text-4xl lg:text-[2.75rem]", dark ? "text-white" : "text-pineapple-navy-900")}>
         {title}
       </h2>
       {text && <p className={cn("mt-4 text-[15px] leading-relaxed", dark ? "text-white/70" : "text-slate-600")}>{text}</p>}
@@ -110,7 +110,7 @@ export function SectionHeading({
 /* ---------- Buttons ---------- */
 export function GoldButton({ href, children, onClick, className }: { href?: string; children: ReactNode; onClick?: () => void; className?: string }) {
   const cls = cn(
-    "group inline-flex items-center justify-center gap-2 bg-grange-gold-500 px-7 py-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-grange-navy-950 shadow-[0_10px_30px_-10px_rgba(198,163,79,0.7)] transition-all duration-300 hover:bg-grange-gold-400 hover:shadow-[0_14px_36px_-10px_rgba(198,163,79,0.9)] hover:-translate-y-0.5",
+    "group inline-flex items-center justify-center gap-2 bg-pineapple-gold-500 px-7 py-3.5 text-[13px] font-bold uppercase tracking-[0.14em] text-pineapple-navy-950 shadow-[0_10px_30px_-10px_rgba(198,163,79,0.7)] transition-all duration-300 hover:bg-pineapple-gold-400 hover:shadow-[0_14px_36px_-10px_rgba(198,163,79,0.9)] hover:-translate-y-0.5",
     className
   );
   if (href)
@@ -130,8 +130,8 @@ export function OutlineButton({ href, children, onClick, light, className }: { h
   const cls = cn(
     "inline-flex items-center justify-center gap-2 border px-7 py-3.5 text-[13px] font-bold uppercase tracking-[0.14em] transition-all duration-300 hover:-translate-y-0.5",
     light
-      ? "border-white/40 text-white hover:border-grange-gold-400 hover:text-grange-gold-300"
-      : "border-grange-navy-900/30 text-grange-navy-900 hover:border-grange-navy-900 hover:bg-grange-navy-900 hover:text-white",
+      ? "border-white/40 text-white hover:border-pineapple-gold-400 hover:text-pineapple-gold-300"
+      : "border-pineapple-navy-900/30 text-pineapple-navy-900 hover:border-pineapple-navy-900 hover:bg-pineapple-navy-900 hover:text-white",
     className
   );
   if (href)
@@ -192,7 +192,7 @@ export function Counter({ value, decimals = 0, suffix = "", plain = false }: { v
 /* ---------- Crest logo (vector recreation) ---------- */
 export function Crest({ size = 52 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 64 72" fill="none" aria-label="Grange School crest">
+    <svg width={size} height={size} viewBox="0 0 64 72" fill="none" aria-label="Pineapple School crest">
       <path d="M32 2 60 12v24c0 16-11.5 27-28 34C15.5 63 4 52 4 36V12L32 2Z" fill="#0A1A3C" stroke="#C6A34F" strokeWidth="2.5" />
       <path d="M32 8 54 15.5V36c0 12.8-9.2 21.8-22 27.4C19.2 57.8 10 48.8 10 36V15.5L32 8Z" fill="none" stroke="#C6A34F" strokeWidth="1" opacity="0.7" />
       {/* open book */}
